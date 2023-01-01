@@ -15,7 +15,7 @@ body{
 .card{
     position: relative;
     width: 380px;
-    height: 550px;
+    height: 600px;
     background-color: white;
 }
 
@@ -41,7 +41,7 @@ body{
 }
 
 .content img{
-    width: 50%;
+    width: 40%;
     border-radius: 50%;
 }
 
