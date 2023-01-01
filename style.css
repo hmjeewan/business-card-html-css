@@ -25,16 +25,18 @@ body{
     background-color: black;
     overflow: hidden;
 }
+
 .card .lines::before{
     content: '';
-    background: linear-gradient(transparent,red,green,blue,transparent);
+    background: linear-gradient(transparent,red,green, blue,transparent);
     width: 700px;
     height: 220px;
-    top: 50%;
-    left: 50%;
+    top:50%;
+    left:50%;
     position: absolute;
     animation: animate 4s linear infinite;
 }
+
 @keyframes animate{
     0%{
         transform: translate(-50%,-50%) rotate(0deg);
@@ -43,10 +45,11 @@ body{
         transform: translate(-50%,-50%) rotate(360deg);
     }
 }
+
 .card .lines::after{
     content: '';
     position: absolute;
-    inset: 3;
+    inset: 3px;
     background-color: #292929;
 }
 
@@ -64,7 +67,7 @@ body{
 }
 
 .content .username{
-    color: rgb(67, 209, 209);
+    color: rgb(67,209,209);
     font-size: 30px;
     margin-top: 20px;
     font-weight: bold;
@@ -72,10 +75,10 @@ body{
 
 .content .title{
     margin-top: 5px;
-    color: white;
+    color:white;
 }
 
-.services{
+.services {
     margin-top: 20px;
     color: white;
     display: flex;
@@ -84,6 +87,10 @@ body{
 }
 
 .services .title{
+    font-size: 20px;
+}
+
+.services ul{
     font-size: 20px;
 }
 
@@ -97,4 +104,4 @@ body{
 
 .services ul li:nth-child(even){
     color: rgb(89,174,235);
-} 
+}
